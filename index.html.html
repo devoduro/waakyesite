@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maame Serwaa Waakye Joint — Kwame Mensah</title>
+  <style>
+    /* Padding is space INSIDE the border; margin is space OUTSIDE the border. */
+    body { font-family: Arial, sans-serif; font-size: 16px; background-color: #f4f9ef; }
+    .container { max-width: 900px; margin: 20px auto; padding: 20px;
+                 border: 3px solid #548235; border-radius: 12px; background-color: white; }
+    nav { background-color: #548235; padding: 10px; margin: 10px 0; border-radius: 6px; }
+    nav a { color: white; margin-right: 16px; font-weight: bold; text-decoration: none; }
+    .card { border: 2px solid #548235; border-radius: 10px; padding: 16px;
+            margin-bottom: 20px; background-color: #fafdf7; }
+    .specials { background-image: url("specials_bg.jpg"); background-repeat: no-repeat;
+                background-size: cover; background-position: center; }
+    .story-text { background-color: #548235; color: white; padding: 16px; border-radius: 10px; }
+    .two-col { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
+    .two-col img { width: 300px; max-width: 100%; border: 4px solid #548235; border-radius: 10px; }
+    .two-col div { flex: 1; min-width: 240px; }
+    h2 { color: darkred; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #333; padding: 8px; }
+    th { background-color: #548235; color: white; }
+    video { width: 480px; max-width: 100%; }
+    button { background-color: #548235; color: white; padding: 10px 18px;
+             border: none; border-radius: 6px; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1 style="color: darkgreen; text-align: center;">Maame Serwaa Waakye Joint</h1>
+    <nav>
+      <a href="#story">Our Story</a>
+      <a href="#menu">Our Menu</a>
+      <a href="#order">Place Your Order</a>
+    </nav>
+  </header>
+  <main>
+    <section class="card" id="story">
+      <h2>Our Story</h2>
+      <div class="two-col">
+        <img src="waakye_food.jpg" alt="A plate of waakye with spaghetti, gari, shito, egg and salad">
+        <div class="story-text">
+          <p style="font-style: italic; text-decoration: underline;">Maame Serwaa Waakye Joint is at Adum in Kumasi.<br>
+            We open at 6:00 am every day except Sunday.</p>
+          <p>Our customers love our <strong>hot waakye</strong> with <em>shito</em>, fresh gari and fried egg. Come and taste the best food in <u>Adum</u>.</p>
+        </div>
+      </div>
+    </section>
+    <section class="card specials">
+      <h2>Our Specials</h2>
+      <ul><li>Waakye</li><li>Jollof rice</li><li>Banku with tilapia</li><li>Kenkey with fried fish</li></ul>
+      <h2>How to Order</h2>
+      <ol><li>Choose a dish</li><li>Fill the order form</li><li>Pay with MoMo</li><li>Collect or receive your food</li></ol>
+    </section>
+    <section class="card" id="menu">
+      <h2>Our Menu</h2>
+      <table>
+        <tr><th>No.</th><th>Dish</th><th>Price (GH₵)</th><th>Portion</th></tr>
+        <tr><td>1</td><td>Waakye with fried egg and gari</td><td>25.00</td><td>Plate</td></tr>
+        <tr><td>2</td><td>Jollof rice with chicken</td><td>40.00</td><td>Plate</td></tr>
+        <tr><td>3</td><td>Banku with tilapia</td><td>45.00</td><td>Plate</td></tr>
+        <tr><td>4</td><td>Sobolo</td><td>8.00</td><td>Cup</td></tr>
+      </table>
+    </section>
+    <section class="card">
+      <h2>Watch Our Advert</h2>
+      <video controls><source src="advert_video.mp4" type="video/mp4">Your browser does not support video.</video><br>
+      <audio controls src="jingle.mp3"></audio>
+    </section>
+    <section class="card" id="order">
+      <h2>Place Your Order</h2>
+      <form>
+        <label for="n">Full name</label> <input type="text" id="n" name="name" required><br>
+        <label for="p">Phone number</label> <input type="text" id="p" name="phone" required><br>
+        <label for="e">Email</label> <input type="email" id="e" name="email"><br>
+        <label for="d">Dish</label>
+        <select id="d" name="dish"><option>Waakye</option><option>Jollof rice</option>
+          <option>Banku with tilapia</option><option>Kenkey with fried fish</option></select><br>
+        <input type="radio" name="how" id="dl" value="delivery"><label for="dl">Delivery</label>
+        <input type="radio" name="how" id="pk" value="pickup"><label for="pk">Pick-up</label><br>
+        <label for="s">Special instructions</label><br>
+        <textarea id="s" name="notes" rows="3" cols="40"></textarea><br>
+        <button type="submit">Send Order</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <hr>
+    <p>© 2026 Maame Serwaa Waakye Joint, Adum, Kumasi • Tel: 024 000 0000</p>
+    <p><a href="https://www.visitghana.com" target="_blank">Visit Ghana</a></p>
+  </footer>
+</div>
+</body>
+</html>
